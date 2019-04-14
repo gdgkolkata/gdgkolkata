@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5,h6{
     color: #24dc97;
 }
 #index-banner{
-    background-image: url(background1.jpg);
+    background-image: url('../img/background1.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6{
     padding-bottom: 25px;
 }
 .paral-black{
-    background-image: url(background-4.jpg);
+    background-image: url('../img/background-4.jpg');
     background-size: cover;
     background-attachment: fixed;
 }

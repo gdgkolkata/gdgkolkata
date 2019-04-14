@@ -1,2 +1,2 @@
-src/config/*
-node_modules/*
+src/config/
+node_modules/

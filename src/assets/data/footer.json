@@ -1,0 +1,58 @@
+{
+    "AboutSession":[
+        {
+            "LinkName":"GDG Kuala Lumpur",
+            "Link":"/"
+        },
+        {
+            "LinkName":"Google Developers Groups",
+            "Link":"https://developers.google.com/programs/community/gdg/"
+        },
+        {
+            "LinkName":"WomenTechamkers",
+            "Link":"https://www.womentechmakers.com/"
+        },
+        {
+            "LinkName":"Become a Member",
+            "Link":"https://www.meetup.com/GDGKualaLumpur/"
+        }
+    ],
+    "ChapterResourcesSession":[
+        {
+            "LinkName" : "Become a Sponsor",
+            "Link" : "mailto:hello@gdgkl.dev"
+        },
+        {
+            "LinkName" : "Call for Speaker",
+            "Link" : "mailto:hello@gdgkl.dev"
+        }
+    ],
+    "FooterEndSession":[
+        {
+            "LinkName" : "Code of Conduct",
+            "Link" : "/about"
+        }
+    ],
+    "Connect": [
+        {
+            "LinkName": "Slack",
+            "Link": "https://gdgmy-slack.herokuapp.com/"
+        },
+        {
+            "LinkName": "Meetup",
+            "Link": "https://www.meetup.com/GDGKualaLumpur/"
+        },
+        {
+            "LinkName": "Peatix",
+            "Link": "https://gdgkl.peatix.com/"
+        },
+        {
+            "LinkName": "Facebook",
+            "Link": "https://www.facebook.com/GDGKualaLumpur/"
+        },
+        {
+            "LinkName": "Instagram",
+            "Link": "https://www.instagram.com/gdg.kl/"
+        }
+    ]
+}

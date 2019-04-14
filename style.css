@@ -1,0 +1,202 @@
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    width: 80%;
+}
+.greenish{
+    color: #24dc97;
+}
+#index-banner{
+    background-image: url(background1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+#index-banner h1{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-bar nav{
+    background-color: transparent;
+}
+#index-banner .row a{
+    background-color: #24dc97;
+}
+.vis-mis{
+    margin-top: 80px;
+}
+.vis-mis .head-vis{
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.vis-mis .context{
+    padding-bottom: 25px;
+}
+.paral-black{
+    background-image: url(background-4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.paral-black .icon-block{
+    padding: 70px 0px 70px 0px;
+}
+.paral-black p{
+    color: #fff;
+    text-align: center;
+}
+.paral-black .light{
+    font-size: 25px;
+}
+.paral-black hr{
+    width: 20px;
+    border-top: 1px solid #24dc97;
+}
+.icon-block h2{
+    font-size: 80px;
+}
+
+.events{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.events .head-vis{
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.events .row .card-image img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display:block;
+    margin: 0 auto;
+}
+.events .row .event-detail-head{
+    font-size: 25px;
+    padding: 15px 0px;
+}
+.stu-amb{
+    background-color: #666;
+    padding-top: 50px;
+}
+.stu-amb .head-amb{
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 70px;
+    color: #fff;
+}
+.stu-amb .card{
+    box-shadow: none;
+    transition: none;
+    background-color: transparent;
+}
+.stu-amb .row .card-image img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display:block;
+    margin: 0 auto;
+}
+.stu-amb .stu-des{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+.stu-amb .stu-des .stu-loc{
+    font-size: 15px;
+    color: #24dc97;
+}
+.sponsors .head-amb{
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 70px;
+}
+.sponsors{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.sponsors img{
+    width: 300px;
+    height: 150px;
+}
+.sponsors .row a{
+    margin: 0 auto;
+    display: table;
+}
+
+
+
+.contributors{
+    background-color: #666;
+    padding-top: 50px;
+}
+.contributors .head-amb{
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 70px;
+    color: #fff;
+}
+.contributors .card{
+    background-color: transparent;
+}
+.contributors .row .card{
+    box-shadow: none;
+    transition: none;
+    background-color: transparent;
+}
+.contributors .row .card-image img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display:block;
+    margin: 0 auto;
+}
+.contributors .stu-des{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+.contributors .stu-des .stu-loc{
+    font-size: 15px;
+    color: #24dc97;
+}
+
+
+.members{
+    padding-top: 50px;
+    box-shadow: inset 0 0 12px 3px rgba(0, 0, 0, 0.75)
+}
+.members .head-amb{
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 70px;
+}
+.members .row .card{
+    box-shadow: none;
+    transition: none;
+    background-color: transparent;
+}
+.members .row .card-image img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display:block;
+    margin: 0 auto;
+}
+.members .stu-des{
+    font-size: 25px;
+    text-align: center;
+}
+.members .stu-des .stu-loc{
+    font-size: 15px;
+    color: #24dc97;
+}
+
+.page-footer{
+    background-color: #888;
+}

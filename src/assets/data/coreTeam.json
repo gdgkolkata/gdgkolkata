@@ -1,92 +1,65 @@
 [
     {
-        "name":"Lim Shang Yi",
-        "designation":"Organizer",
-        "twitter":"https://twitter.com/shanggyilim",
-        "linkedin":"https://www.linkedin.com/in/shang-yi-lim/",
-        "github":"https://github.com/shangyilim",
-        "profileImage":"lsy.jpeg",
-        "website":""
+        "name": "Rivu Chakrabarty",
+        "designation": "GDG Kolkata Lead",
+        "twitter": "#",
+        "linkedin": "#",
+        "github": "#",
+        "profileImage": "Rivu_Chakraborty.jpg",
+        "website": ""
     },
     {
-        "name":"Christine Tee",
-        "designation":"Co-organizer",
-        "twitter":"https://twitter.com/PyTeeChristine",
-        "linkedin":"https://linkedin.com/in/christinetee",
-        "github":"https://github.com/pytee",
-        "profileImage":"christine.jpg",
-        "website":""
+        "name": "Manisha Biswas",
+        "designation": "WTM Kolkata Lead",
+        "twitter": "#",
+        "linkedin": "#",
+        "github": "#",
+        "profileImage": "Manisha_Biswas.jpeg",
+        "website": ""
     },
     {
-        "name":"Qamra Jema Khan",
-        "designation":"Organizer (Women Techmakers)",
-        "twitter":"",
-        "linkedin":"https://www.linkedin.com/in/qamra-jema-khan-b992407a",
-        "github":"",
-        "profileImage":"qamra.jpeg",
-        "website":""
+        "name": "Kaushik Pal",
+        "designation": "Founder- GDG Kolkata",
+        "twitter": "#",
+        "linkedin": "#",
+        "github": "",
+        "profileImage": "Kaushik_Pal.jpeg",
+        "website": ""
     },
     {
-        "name":"Eric Ngu",
-        "designation":"Co-organizer",
-        "twitter":"https://twitter.com/potateros/",
-        "linkedin":"https://linkedin.com/in/cheehongngu/",
-        "github":"https://github.com/potateros",
-        "profileImage":"eric.jpg",
-        "website":""
+        "name": "Suvankar Bose",
+        "designation": "Founder- GDG Kolkata",
+        "twitter": "#",
+        "linkedin": "#",
+        "github": "#",
+        "profileImage": "Suvankar_Bose.jpeg",
+        "website": ""
     },
     {
-        "name":"Derek Chan",
-        "designation":"Committee",
-        "twitter":"",
-        "linkedin":"https://www.linkedin.com/in/derek-chan-617a24b/",
-        "github":"",
-        "profileImage":"derek.jpeg",
-        "website":""
+        "name": "Raveesh Aggarwal",
+        "designation": "Event Organizer",
+        "twitter": "#",
+        "linkedin": "#",
+        "github": "#",
+        "profileImage": "Raveesh_Agarwal.jpeg",
+        "website": ""
     },
     {
-        "name":"Chris Ng",
-        "designation":"Committee",
-        "twitter":"",
-        "linkedin":"https://www.linkedin.com/in/chrisngwz",
-        "github":"",
-        "profileImage":"chrisng.jpeg",
-        "website":""
+        "name": "Anubhav Singh",
+        "designation": "Event Organizer",
+        "twitter": "#",
+        "linkedin": "#",
+        "github": "",
+        "profileImage": "Anubhav_Singh.jpg",
+        "website": ""
     },
     {
-        "name":"Tumenbayeva Dara",
-        "designation":"Committee",
-        "twitter":"https://twitter.com/Darochka1",
-        "linkedin":"https://www.linkedin.com/in/dara-tumenbayeva/",
-        "github":"https://github.com/Dara1234",
-        "profileImage":"dara.jpg",
-        "website":""
-    },
-    {
-        "name":"Qian Ru",
-        "designation":"Committee",
-        "twitter":"",
-        "linkedin":"",
-        "github":"",
-        "profileImage":"qianru.jpg",
-        "website":""
-    },
-    {
-        "name":"WengYue",
-        "designation":"Committee",
-        "twitter":"",
-        "linkedin":"",
-        "github":"",
-        "profileImage":"wengyue.jpg",
-        "website":""
-    },
-    {
-        "name":"Yz Kee",
-        "designation":"Committee",
-        "twitter":"https://twitter.com/",
-        "linkedin":"https://www.linkedin.com/in/yzkee/",
-        "github":"https://github.com/yzkee",
-        "profileImage":"yz.jpg",
-        "website":""
+        "name": "Shuvam Manna",
+        "designation": "Event Organizer",
+        "twitter": "#",
+        "linkedin": "#",
+        "github": "#",
+        "profileImage": "Shuvam_Manna.jpg",
+        "website": ""
     }
 ]

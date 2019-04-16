@@ -1,4 +1,4 @@
-<template>
+<template :style="{'background-image':'url('+require('@/assets/img/svg/bg.svg')+')'}" style="background-position:right">
     <v-container class="pa-0 ">
         <v-layout wrap align-center justify-center row fill-height class="mt-0 mb-0" >
            <v-flex xs12 md12 lg12 class="pa-2 mb-0">
@@ -9,47 +9,59 @@
             </v-flex> 
         </v-layout>
 
-        <v-layout wrap align-start justify-start row fill-height class="hidden-sm-and-down my-3" :style="{'background-image':'url('+require('@/assets/img/svg/bg.svg')+')'}" style="background-position:right">
-            <v-flex xs12 v-if="showLoader">
-                <v-progress-circular
-                    :size="50"
-                    color="blue"
-                    indeterminate
-                ></v-progress-circular>
+        <v-layout  wrap align-center justify-center row fill-height class="mt-2 elevation-2 white" style="border:1px solid #e0e0e0;border-radius:5px"  v-if="eventDetails.IsReady">
+            <v-flex xs12 sm4 md3 lg3 class="pa-4">
+                <v-img
+                    :src="eventDetails.EventImage"
+                    :lazy-src="eventDetails.EventImage"
+                    width="100%">
+                    <v-layout
+                        slot="placeholder"
+                        fill-height
+                        align-center
+                        justify-center
+                        ma-0
+                    >
+                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                </v-img>
             </v-flex>
-            <v-flex xs12 sm6 md4 lg4 v-for="(item,i) in eventsData" :key="i">
-                <v-card 
-                    flat
-                    class="ma-1 pa-1 my-0 elevation-1" 
-                    style="">
+           <v-flex xs12 sm8 md9 lg9 class="pa-2 py-4 px-3" >
+                <p class="google-font mb-0" style="font-size:150%;color:rgb(2, 119, 189)">{{eventDetails.FeatureEventName}}</p>
+                <span class="google-font mt-1 mb-0 grey--text"  style="font-size:105%">
+                    <v-icon small>insert_invitation</v-icon>
+                    {{eventDetails.EventDate.Date +'/'+ eventDetails.EventDate.Month +'/'+ eventDetails.EventDate.Year}} 
+                    &nbsp;
+                    <v-icon small>watch_later</v-icon>
+                    {{eventDetails.EventTime.StartTime +' - '+ eventDetails.EventTime.EndTime}}
+                    &nbsp;
+                    <v-icon small>map</v-icon>
+                    {{eventDetails.EventVenue | summery(50)}} <a :href="eventDetails.EventVenueMapLink" target="_blank">(Map)</a>
+                </span>    
+               <p class="google-font mt-2 mb-1" style="font-size:115%;color:#757575">
+                   {{eventDetails.EventDescription}}
+               </p>
+                
+                <v-btn color="#1a73e8" v-if="eventDetails.RegistrationLink.length>0" :href="eventDetails.RegistrationLink" target="_blank" rel="noopener" class="ma-0 elevation-0 my-2" dark style="text-transform: capitalize;border-radius:5px;"> 
+                    Registration Link
+                </v-btn>
+                &nbsp;
 
-                    <v-card-title class="mb-0">
-                        <div>
-                            <p class="google-font mb-2" style="font-size:140%;color:#0277bd">{{ item.name }}</p>
-                            <p class="google-font mt-2 mb-1"><span v-html="$options.filters.summery(item.description,180)" style="font-size:110%"></span></p>
-                            <p class="google-font mt-1 mb-0" style="font-size:110%">
-                                <v-icon>insert_invitation</v-icon>
-                                {{item.local_date}}
-                            </p>
-                            <p class="google-font mt-1 mb-0" style="font-size:110%">
-                                <v-icon>watch_later</v-icon>
-                                {{item.local_time}}
-                            </p>
-                            <p class="google-font mt-1 mb-0" style="font-size:110%">
-                                <v-icon>map</v-icon>
-                                {{item.venue.name | summery(30)}}
-                            </p>
-                        </div>
-                    </v-card-title>
+                <v-tooltip top slot="activator">
+                    <v-btn flat :href="eventDetails.EventWebsite" target="_blank" rel="noopener" icon color="#616161" class="ma-0 elevation-0" slot="activator" style="text-transform: capitalize;border-radius:5px;"> 
+                        <v-icon>language</v-icon>
+                    </v-btn>
+                    <span>See {{eventDetails.FeatureEventName}} Website</span>
+                </v-tooltip>
 
-                   
-                     <v-card-actions class="mt-0">
-                        <v-spacer></v-spacer>
-                        <v-btn flat color="#4C4A78" :href="item.link" target="_blank" class="mb-0 ml-0 mt-0 google-font" style="border-radius:7px;text-transform: capitalize;">See More</v-btn> 
-                    </v-card-actions>
-                    
-                </v-card>
-            </v-flex>
+                <v-tooltip top slot="activator">
+                    <v-btn flat  :href="eventDetails.MeetupLink" target="_blank" rel="noopener" icon color="#616161" class="ma-0 elevation-0" slot="activator" style="text-transform: capitalize;border-radius:5px;"> 
+                        <v-icon>fab fa-meetup</v-icon>
+                    </v-btn>
+                    <span>See {{eventDetails.FeatureEventName}} Meetup</span>
+                </v-tooltip>
+            
+            </v-flex> 
         </v-layout>
 
         <v-layout wrap align-center justify-center row fill-height class="hidden-md-and-up">
@@ -99,6 +111,7 @@
 <script>
 import ChapterDetails from '@/assets/data/chapterDetails.json'
 import { MeetupAPI } from '@/config/key'
+import eventDetails from '@/assets/data/featureEvent.json'
 
 
     
@@ -106,6 +119,7 @@ import { MeetupAPI } from '@/config/key'
 export default {
     data() {
         return {
+            eventDetails:eventDetails,
             chapterDetails: ChapterDetails,
             eventsData:[],
             showLoader: true,
@@ -121,9 +135,22 @@ export default {
             this.eventsData = res
         })
     },
+    methods:{
+        getImgUrl(pic) {
+            if(pic.length>0){
+                return require('@/assets/img/featureEvent/'+pic)
+            }else{
+                return require('@/assets/img/featureEvent/imagenotfound.png')
+            }
+        },
+    },
     filters:{
         summery: (val,num)=>{
             return val.substring(0,num)+"..."
+        },
+        dateFilter: (value)=>{
+            const date = new Date(value)
+            return date.toLocaleString(['en-US'], {month: 'short', day: '2-digit', year: 'numeric'})
         }
     }
 }

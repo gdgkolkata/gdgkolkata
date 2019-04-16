@@ -1,58 +1,50 @@
 {
-    "AboutSession":[
+    "AboutSession": [
         {
-            "LinkName":"GDG Kuala Lumpur",
-            "Link":"/"
+            "LinkName": "GDG Kolkata",
+            "Link": "/"
         },
         {
-            "LinkName":"Google Developers Groups",
-            "Link":"https://developers.google.com/programs/community/gdg/"
+            "LinkName": "Google Developers Groups",
+            "Link": "https://developers.google.com/programs/community/gdg/"
         },
         {
-            "LinkName":"WomenTechamkers",
-            "Link":"https://www.womentechmakers.com/"
+            "LinkName": "WomenTechamkers",
+            "Link": "https://www.womentechmakers.com/"
         },
         {
-            "LinkName":"Become a Member",
-            "Link":"https://www.meetup.com/GDGKualaLumpur/"
+            "LinkName": "Become a Member",
+            "Link": "https://www.meetup.com/GDG-Kolkata"
         }
     ],
-    "ChapterResourcesSession":[
+    "ChapterResourcesSession": [
         {
-            "LinkName" : "Become a Sponsor",
-            "Link" : "mailto:hello@gdgkl.dev"
+            "LinkName": "Become a Sponsor",
+            "Link": "mailto:lead@gdgkolkata.org"
         },
         {
-            "LinkName" : "Call for Speaker",
-            "Link" : "mailto:hello@gdgkl.dev"
+            "LinkName": "Call for Speaker",
+            "Link": "mailto:lead@gdgkolkata.org"
         }
     ],
-    "FooterEndSession":[
+    "FooterEndSession": [
         {
-            "LinkName" : "Code of Conduct",
-            "Link" : "/about"
+            "LinkName": "Code of Conduct",
+            "Link": "/about"
         }
     ],
     "Connect": [
         {
             "LinkName": "Slack",
-            "Link": "https://gdgmy-slack.herokuapp.com/"
+            "Link": "#"
         },
         {
             "LinkName": "Meetup",
-            "Link": "https://www.meetup.com/GDGKualaLumpur/"
-        },
-        {
-            "LinkName": "Peatix",
-            "Link": "https://gdgkl.peatix.com/"
+            "Link": "https://www.meetup.com/GDG-Kolkata/"
         },
         {
             "LinkName": "Facebook",
-            "Link": "https://www.facebook.com/GDGKualaLumpur/"
-        },
-        {
-            "LinkName": "Instagram",
-            "Link": "https://www.instagram.com/gdg.kl/"
+            "Link": "https://www.facebook.com/GDGKolkata/"
         }
     ]
 }

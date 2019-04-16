@@ -5,6 +5,7 @@
                <p class="google-font mb-0" style="font-size:170%;color:#0277bd">Upcoming Events</p>
                <p class="google-font mt-0 mb-0" style="font-size:120%">
                    Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.
+                   To know more about the<br> upcoming meetups <a :href="chapterDetails.ChapterMeetupLink" target="_blank" style="text-decoration:none;color:#0277bd">Click here</a>
                </p>     
             </v-flex> 
         </v-layout>

@@ -5,12 +5,19 @@
                <p class="google-font mb-0" style="font-size:170%;color:#0277bd">Upcoming Events</p>
                <p class="google-font mt-0 mb-0" style="font-size:120%">
                    Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.
-                   To know more about the<br> upcoming meetups <a :href="chapterDetails.ChapterMeetupLink" target="_blank" style="text-decoration:none;color:#0277bd">Click here</a>
+                   To know more about the<br> upcoming meetups <a :href="chapterDetails.ChapterUpcomingEventsLink" target="_blank" style="text-decoration:none;color:#0277bd">Click here</a>
                </p>     
             </v-flex> 
         </v-layout>
 
         <v-layout  wrap align-center justify-center row fill-height class="mt-2 elevation-2 white" style="border:1px solid #e0e0e0;border-radius:5px"  v-if="eventDetails.IsReady">
+            <v-flex xs12 v-if="showLoader">
+                <v-progress-circular
+                    :size="50"
+                    color="blue"
+                    indeterminate
+                ></v-progress-circular>
+            </v-flex>
             <v-flex xs12 sm4 md3 lg3 class="pa-4">
                 <v-img
                     :src="eventDetails.EventImage"

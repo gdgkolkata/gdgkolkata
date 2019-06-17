@@ -17,7 +17,7 @@
       </v-layout>
     </v-container>
 
-    <v-container fluid style="background-color:#4C4A78" >
+    <v-container fluid style="background-color: #1A73E8" >
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10 class="">
           <AboutGDGChapter />

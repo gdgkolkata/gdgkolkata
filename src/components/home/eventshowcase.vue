@@ -9,7 +9,7 @@
                <router-link to="/events" flat color="#4C4A78" class="ma-0 google-font" style="border-radius:5px;text-transform: capitalize;text-decoration:none;color:#4C4A78">See More</router-link>             
             </v-flex> 
         </v-layout>
-
+        <p class="google-font" style="font-size:170%; display:block;">Past Events</p>
         <v-layout wrap align-start justify-center row fill-height class="hidden-sm-and-down mb-4">
             <v-flex xs12 class="text-xs-center" v-if="showLoader">
                 <v-progress-circular

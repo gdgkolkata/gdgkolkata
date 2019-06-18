@@ -6,7 +6,7 @@
     "serve": "npm start",
     "build": "npm build",
     "lint": "vue-cli-service lint",
-    "start": "npm install && npm run serve"
+    "start": "npm install && npm start"
   },
   "dependencies": {
     "axios": "^0.18.0",

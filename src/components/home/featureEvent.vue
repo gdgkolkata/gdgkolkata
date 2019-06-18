@@ -26,19 +26,19 @@
                 <p class="google-font mb-0" style="font-size:150%;color:rgb(2, 119, 189)">{{eventDetails.FeatureEventName}}</p>
                 <span class="google-font mt-1 mb-0 grey--text"  style="font-size:105%">
                     <v-icon small>insert_invitation</v-icon>
-                    {{eventDetails.EventDate.Date +'/'+ eventDetails.EventDate.Month +'/'+ eventDetails.EventDate.Year}} 
+                    To be Announced
                     &nbsp;
-                    <v-icon small>watch_later</v-icon>
-                    {{eventDetails.EventTime.StartTime +' - '+ eventDetails.EventTime.EndTime}}
+                    <!--- <v-icon small>watch_later</v-icon> --->
+                    <!--- {{eventDetails.EventTime.StartTime +' - '+ eventDetails.EventTime.EndTime }} --->
                     &nbsp;
                     <v-icon small>map</v-icon>
-                    {{eventDetails.EventVenue | summery(50)}} <a :href="eventDetails.EventVenueMapLink" target="_blank">(Map)</a>
+                    {{eventDetails.EventVenue }} <a :href="eventDetails.EventVenueMapLink" target="_blank">(Map)</a>
                 </span>    
                <p class="google-font mt-2 mb-1" style="font-size:115%;color:#757575">
                    {{eventDetails.EventDescription}}
                </p>
                 
-                <v-btn color="#1a73e8" v-if="eventDetails.RegistrationLink.length>0" :href="eventDetails.RegistrationLink" target="_blank" rel="noopener" class="ma-0 elevation-0 my-2" dark style="text-transform: capitalize;border-radius:5px;"> 
+                <v-btn color="#1a73e8" v-if="eventDetails.RegistrationLink.length>0" :href="eventDetails.RegistrationLink" target="_blank" rel="noopener" class="ma-0 elevation-0 my-2" disabled style="text-transform: capitalize;border-radius:5px;"> 
                     Registration Link
                 </v-btn>
                 &nbsp;

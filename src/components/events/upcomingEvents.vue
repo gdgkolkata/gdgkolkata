@@ -5,9 +5,50 @@
                <p class="google-font mb-0" style="font-size:170%;color:#0277bd">Upcoming Events</p>
                <p class="google-font mt-0 mb-0" style="font-size:120%">
                    Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.
-                   To know more about the<br> upcoming meetups <a :href="chapterDetails.ChapterUpcomingEventsLink" target="_blank" style="text-decoration:none;color:#0277bd">Click here</a>
+                   To know more about the upcoming meetups visit <a :href="chapterDetails.ChapterUpcomingEventsLink" target="_blank" style="text-decoration:none;color:#0277bd">GDG Kolkata Meetup Group</a>
                </p>     
             </v-flex> 
+        </v-layout>
+
+        <v-layout wrap align-center justify-center row fill-height>
+            <v-flex xs12 v-if="showLoader">
+                <v-progress-circular
+                    :size="50"
+                    color="blue"
+                    indeterminate
+                ></v-progress-circular>
+            </v-flex>
+
+            <v-flex xs12>
+                <v-slide-y-reverse-transition>
+                    <v-list two-line subheader v-show="showData" class="grey lighten-5">
+                        <v-list-tile
+                            v-for="(item,i) in eventsData" :key="i"
+                            avatar
+                            style="border-color:#e0e0e0;border-width: 1px;border-style: solid;border-top:0; border-left:0; border-right:0; border-bottom:1"
+                        >
+                            <v-list-tile-avatar>
+                                <v-icon>view_compact</v-icon>
+                            </v-list-tile-avatar>
+
+                            <v-list-tile-content>
+                                <v-list-tile-title class="google-font">{{ item.name }}</v-list-tile-title>
+                                <v-list-tile-sub-title class="google-font">{{ item.local_date }} | {{ item.local_time }}</v-list-tile-sub-title>
+                            </v-list-tile-content>
+
+                            <v-list-tile-action>
+                                <v-btn icon ripple :href="item.link"
+                                target="_blank">
+                                    <v-icon color="grey lighten-1">arrow_forward</v-icon>
+                                </v-btn>
+                            </v-list-tile-action>
+                            
+                        </v-list-tile>
+                        
+
+                    </v-list>
+                </v-slide-y-reverse-transition>
+            </v-flex>
         </v-layout>
 
         <v-layout  wrap align-center justify-center row fill-height class="mt-2 elevation-2 white" style="border:1px solid #e0e0e0;border-radius:5px"  v-if="eventDetails.IsReady">
@@ -72,47 +113,6 @@
             </v-flex> 
         </v-layout>
 
-        <v-layout wrap align-center justify-center row fill-height class="hidden-md-and-up">
-            <v-flex xs12 v-if="showLoader">
-                <v-progress-circular
-                    :size="50"
-                    color="blue"
-                    indeterminate
-                ></v-progress-circular>
-            </v-flex>
-
-            <v-flex xs12>
-                <v-slide-y-reverse-transition>
-                    <v-list two-line subheader v-show="showData" class="grey lighten-5">
-                        <v-list-tile
-                            v-for="(item,i) in eventsData" :key="i"
-                            avatar
-                            style="border-color:#e0e0e0;border-width: 1px;border-style: solid;border-top:0; border-left:0; border-right:0; border-bottom:1"
-                        >
-                            <v-list-tile-avatar>
-                                <v-icon>view_compact</v-icon>
-                            </v-list-tile-avatar>
-
-                            <v-list-tile-content>
-                                <v-list-tile-title class="google-font">{{ item.name }}</v-list-tile-title>
-                                <v-list-tile-sub-title class="google-font">{{ item.local_date }} | {{ item.local_time }}</v-list-tile-sub-title>
-                            </v-list-tile-content>
-
-                            <v-list-tile-action>
-                                <v-btn icon ripple :href="item.link"
-                                target="_blank">
-                                    <v-icon color="grey lighten-1">arrow_forward</v-icon>
-                                </v-btn>
-                            </v-list-tile-action>
-                            
-                        </v-list-tile>
-                        
-
-                    </v-list>
-                </v-slide-y-reverse-transition>
-            </v-flex>
-        </v-layout>
-
     </v-container>
 </template>
 
@@ -137,20 +137,12 @@ export default {
     },
     created(){
         fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
+            
             this.showLoader = false
             this.showData = true
             this.showData1 = true
             this.eventsData = res
         })
-    },
-    methods:{
-        getImgUrl(pic) {
-            if(pic.length>0){
-                return require('@/assets/img/featureEvent/'+pic)
-            }else{
-                return require('@/assets/img/featureEvent/imagenotfound.png')
-            }
-        },
     },
     filters:{
         summery: (val,num)=>{

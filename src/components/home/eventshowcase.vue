@@ -10,7 +10,7 @@
             </v-flex> 
         </v-layout>
 
-        <p class="google-font" style="font-size:170%; display:block;">Upcoming Events</p>
+        <p class="google-font" style="font-size:170%; display:block;color:#1A73E8;">Upcoming Events</p>
         <v-layout wrap align-start justify-left row fill-height class="hidden-sm-and-down mb-4">
             <v-flex xs12 class="text-xs-center" v-if="showLoader">
                 <v-progress-circular
@@ -95,7 +95,7 @@
         </v-layout>
 
 
-        <p class="google-font" style="font-size:170%; display:block;">Past Events</p>
+        <p class="google-font" style="font-size:170%; display:block;color:#1A73E8;">Past Events</p>
         <v-layout wrap align-start justify-center row fill-height class="hidden-sm-and-down mb-4">
             <v-flex xs12 class="text-xs-center" v-if="showLoader">
                 <v-progress-circular

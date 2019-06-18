@@ -2,10 +2,10 @@
     <v-container class="pa-0" style="max-width:100vw!important;">
         <v-layout wrap align-center justify-center row fill-height>
            <v-img xs12 sm12 md12 lg12 xl12
-                    :src="require('@/assets/img/devfest.jpg')"
-                    :lazy-src="require('@/assets/img/devfest.jpg')"
+                    :src="require('@/assets/img/banner.jpg')"
+                    :lazy-src="require('@/assets/img/banner.jpg')"
                     gradient="rgba(0,0,0,.65), rgba(0,0,0,.65)"
-                    width="100%" max-height="80vh" style="padding:20px">
+                    width="100%" max-height="90vh" style="padding:20px">
                      <v-layout wrap align-center justify-center row fill-height style="color:#fff">
                    <v-flex xs12 sm7 md8 lg8 xl8 class="">
                 <p class="google-font mb-1" style="font-weight: 350;color: #fff;font-size:300%;line-height:1"><b>Make good things 

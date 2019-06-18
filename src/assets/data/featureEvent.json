@@ -1,21 +1,20 @@
 {
     "IsReady": true,
-    "FeatureEventName":"GDG Kolkata DevFest 2019",
-    "EventImage":"https://res.cloudinary.com/shangyilim/image/upload/v1555037274/iox19.jpg",
-    "EventDate":{
-        "Date":"xx",
-        "Month":"xx",
-        "Year":"2019"
+    "FeatureEventName": "GDG Kolkata DevFest 2019",
+    "EventImage": "https://res.cloudinary.com/shangyilim/image/upload/v1555037274/iox19.jpg",
+    "EventDate": {
+        "Date": "xx",
+        "Month": "xx",
+        "Year": "2019"
     },
-    "EventTime":{
-        "StartTime":"xx:xx XX",
-        "EndTime":"xx:xx XX"
+    "EventTime": {
+        "StartTime": "xx:xx XX",
+        "EndTime": "xx:xx XX"
     },
-    "EventVenue":"Kolkata",
-    "EventVenueMapLink":"https://goo.gl/maps/fkBxkgbRx1xhYUX5A",
-    "EventWebsite":"https://devfest.gdgkolkata.org",
-    "EventDescription":"Google I/O Extended is focused on bringing the local developer community together to experience the keynote and other main Google I/O sessions. We will have speakers to bring you the best from Mountain View right in Kuala Lumpur!",
-    "MeetupLink":"https://www.meetup.com/GDGKualaLumpur/events/259348476/",
-    "RegistrationLink":"https://events.gdgkl.dev/iox/registration"
+    "EventVenue": "Kolkata",
+    "EventVenueMapLink": "#",
+    "EventWebsite": "https://devfest.gdgkolkata.org",
+    "EventDescription": "GDG DevFest Kolkata is Developer Festival that brings together the world class experts in Android, Web and Cloud technologies to the City of Joy for a day full of sessions, workshops and showcases.",
+    "MeetupLink": "#",
+    "RegistrationLink": "#"
 }
-

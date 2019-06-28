@@ -1,7 +1,7 @@
 [
     {
         "name": "Rivu Chakrabarty",
-        "designation": "GDG Kolkata Lead",
+        "designation": "Co-organizer",
         "twitter": "https://twitter.com/rivuchakraborty",
         "linkedin": "https://www.linkedin.com/in/rivuchk/",
         "github": "#",
@@ -10,7 +10,7 @@
     },
     {
         "name": "Manisha Biswas",
-        "designation": "WTM Kolkata Lead",
+        "designation": "Organizer",
         "twitter": "https://twitter.com/manisha_biswas7?lang=en",
         "linkedin": "https://www.linkedin.com/in/manisha-biswas-2a3228114/",
         "github": "#",
@@ -18,7 +18,16 @@
         "website": ""
     },
     {
-        "name": "Kaushik Pal",
+        "name": "Tanmay Ghosh",
+        "designation": "Conceptualizer",
+        "twitter": "#",
+        "linkedin": "#",
+        "github": "#",
+        "profileImage": "Tanmay_Ghosh.jpg",
+        "website": ""
+    },
+    {
+        "name": "Koushik Pal",
         "designation": "Founder- GDG Kolkata",
         "twitter": "https://twitter.com/hello2pal",
         "linkedin": "https://www.linkedin.com/in/koushik-pal-06572525/",
@@ -47,8 +56,8 @@
     {
         "name": "Anubhav Singh",
         "designation": "Event Organizer",
-        "twitter": "https://twitter.com/xprilion?fbclid=IwAR3dAxugtT2j15OIbZq-dVJKD6h1LOwAhFywMbFBpnRoQk0UVQHq_bOwwQ8",
-        "linkedin": "https://www.linkedin.com/in/xprilion/?fbclid=IwAR0jkCbWJBXsMLrpSrbERf-2cjiggaZ6qjVjSQX5RdcVjdkifF3gRVVUFZY",
+        "twitter": "https://twitter.com/xprilion",
+        "linkedin": "https://www.linkedin.com/in/xprilion/",
         "github": "#",
         "profileImage": "Anubhav_Singh.jpg",
         "website": ""
@@ -60,6 +69,33 @@
         "linkedin": "https://www.linkedin.com/in/shuvam-manna/",
         "github": "#",
         "profileImage": "Shuvam_Manna.jpg",
+        "website": ""
+    },
+    {
+        "name": "Arijit Saha",
+        "designation": "Contributor",
+        "twitter": "#",
+        "linkedin": "#",
+        "github": "#",
+        "profileImage": "arijit.jpg",
+        "website": ""
+    },
+    {
+        "name": "Priyanka Banerjee",
+        "designation": "Contributor",
+        "twitter": "#",
+        "linkedin": "#",
+        "github": "#",
+        "profileImage": "priyanka.jpg",
+        "website": ""
+    },
+    {
+        "name": "Subhasis Chatterjee",
+        "designation": "Contributor",
+        "twitter": "#",
+        "linkedin": "#",
+        "github": "#",
+        "profileImage": "subhasish.jpg",
         "website": ""
     }
 ]

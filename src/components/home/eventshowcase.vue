@@ -196,13 +196,13 @@ export default {
         }
     },
     created(){
-        fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?desc=true&photo-host=public&page=4&status=past&key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
+        fetch('https://gdg-cors-proxy.herokuapp.com/https://api.meetup.com/'+MeetupAPI.urlname+'/events?desc=true&photo-host=public&page=4&status=past&key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
             this.showLoader = false
             this.showData = true
             this.eventsData = res
         }),
 
-        fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
+        fetch('https://gdg-cors-proxy.herokuapp.com/https://api.meetup.com/'+MeetupAPI.urlname+'/events?key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
             this.upcomingEventsData = res
         })
     },

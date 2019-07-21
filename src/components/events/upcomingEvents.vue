@@ -31,7 +31,7 @@
                     To be Announced
                     &nbsp;
                     <!--- <v-icon small>watch_later</v-icon> --->
-                    <!--- {{eventDetails.EventTime.StartTime +' - '+ eventDetails.EventTime.EndTime }} --->
+                    {{eventDetails.EventTime.StartTime +' - '+ eventDetails.EventTime.EndTime }}
                     &nbsp;
                     <v-icon small>map</v-icon>
                     {{eventDetails.EventVenue }} <a :href="eventDetails.EventVenueMapLink" target="_blank">(Map)</a>

@@ -1,6 +1,6 @@
 {
-  "name": "GDG Kuala Lumpur",
-  "short_name": "GDG KL",
+  "name": "GDG Kolkata",
+  "short_name": "GDG Kol",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -18,5 +18,5 @@
   "background_color": "#ffff",
   "orientation": "portrait",
   "theme_color": "#0277bd",
-  "description": "Google Developer Group Kuala Lumpur (GDG KL) is a non-profit independent developer & user group that discuss and share experiences developing applications using Google Developer technologies like Android, Firebase, Angular, Google Cloud Platform and many more."
+  "description": "Google Developer Group Kolkata is a non-profit independent developer & user group that discuss and share experiences developing applications using Google Developer technologies like Android, Firebase, Angular, Google Cloud Platform and many more."
 }

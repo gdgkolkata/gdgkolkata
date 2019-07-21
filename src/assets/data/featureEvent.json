@@ -3,18 +3,18 @@
     "FeatureEventName": "GDG Kolkata DevFest 2019",
     "EventImage": "https://i.ibb.co/rQrY3dx/devfest2019.jpg",
     "EventDate": {
-        "Date": "xx",
-        "Month": "xx",
+        "Date": "04",
+        "Month": "08",
         "Year": "2019"
     },
     "EventTime": {
-        "StartTime": "xx:xx XX",
-        "EndTime": "xx:xx XX"
+        "StartTime": "08:00 AM",
+        "EndTime": "06:00 PM"
     },
     "EventVenue": "Kolkata",
-    "EventVenueMapLink": "#",
+    "EventVenueMapLink": "https://www.google.com/maps/search/?api=1&query=22.579748%2C88.461170",
     "EventWebsite": "https://devfest.gdgkolkata.org",
     "EventDescription": "GDG DevFest Kolkata is Developer Festival that brings together the world class experts in Android, Web and Cloud technologies to the City of Joy for a day full of sessions, workshops and showcases.",
-    "MeetupLink": "#",
-    "RegistrationLink": "#"
+    "MeetupLink": "https://www.meetup.com/GDG-Kolkata/events/263155152/",
+    "RegistrationLink": "https://devfest.gdgkolkata.org"
 }
